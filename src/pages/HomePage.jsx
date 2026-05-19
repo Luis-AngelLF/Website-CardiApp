@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../images/icono-cardiapp-removebg-preview.png';
-
+import doctor from '../images/doctor-white.png'
+import heart from '../images/heart.png'
 function HomePage() {
   return (
     <div className="w-full">
@@ -24,9 +25,12 @@ function HomePage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105">
+              <Link
+                to="/contact"
+                className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105"
+              >
                 Contactenos
-              </button>
+              </Link>
               <Link
                 to="/about"
                 className="bg-transparent border-2 border-[#6CE1D5] text-[#6CE1D5] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#6CE1D5] hover:text-[#184741] transition-all duration-300"
@@ -38,12 +42,12 @@ function HomePage() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[#6CE1D5]/20">
               <div>
-                <p className="text-3xl font-bold text-[#7BC64B]">50K+</p>
-                <p className="text-gray-400">Usuarios Activos</p>
+                <img src={heart} className="h-10"/>
+                <p className="text-gray-400">Seguimiento médico</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-[#7BC64B]">4.8★</p>
-                <p className="text-gray-400">Calificación</p>
+                <img src={doctor} className="h-10"/>
+                <p className="text-gray-400">Apoyo Médico</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-[#7BC64B]">24/7</p>
@@ -55,8 +59,8 @@ function HomePage() {
           {/* Right Image Placeholder */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] rounded-full blur-3xl opacity-30"></div>
-              <div className="relative w-80 h-80 bg-[#E4F9F5]/95 border-4 border-[#000000]/30 rounded-full flex items-center justify-center shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-[White] to-[Black] rounded-full blur-3xl opacity-30"></div>
+              <div className="relative w-80 h-80 bg-[White]/95 border-4 rounded-full flex items-center justify-center shadow-2xl">
                 <img src={logo} alt="CardiApp Icon" className="w-48 h-48 object-contain" />
               </div>
             </div>
@@ -209,11 +213,11 @@ function HomePage() {
             Comienza tu Viaje Hacia una Mejor Salud
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Miles de personas ya confían en CardiApp para cuidar su corazón. ¡Únete a ellos hoy!
+            Cuida de tu corazón de manera más ágil con CardiApp. ¡Únete hoy!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105">
-              Descargar CardiApp
+              Conoce Más de Nosotros
             </button>
             <Link
               to="/contact"

@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom';
+import CEO from "../images/CEO.jpg"
+import CIO from "../images/CIO.jpg"
+import COO from "../images/COO.jpg"
+
 
 function AboutUs() {
   return (
@@ -103,62 +107,37 @@ function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Team Member 1 */}
             <div className="text-center">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] flex items-center justify-center text-5xl">
-                👨‍⚕️
-              </div>
-              <h3 className="text-xl font-bold text-[#184741]">Dr. Carlos Méndez</h3>
-              <p className="text-[#7BC64B] font-semibold mb-2">Cardiólogo Fundador</p>
+              <img className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] 
+              flex items-center justify-center text-5xl" src={CEO} />
+                
+              <h3 className="text-xl font-bold text-[#184741]">Mauricio Murillo Jiménez </h3>
+              <p className="text-[#7BC64B] font-semibold mb-2">CEO</p>
               <p className="text-gray-700">
-                20+ años de experiencia en cardiología. Pionero en medicina digital.
+                 Fisioterapeuta especializado en rehabilitación cardíaca
               </p>
             </div>
 
             {/* Team Member 2 */}
             <div className="text-center">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] flex items-center justify-center text-5xl">
-                👩‍💼
-              </div>
-              <h3 className="text-xl font-bold text-[#184741]">Dra. Ana Rodríguez</h3>
-              <p className="text-[#7BC64B] font-semibold mb-2">Directora Médica</p>
+              <img className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] 
+              flex items-center justify-center text-5xl" src={COO}/>
+              
+              <h3 className="text-xl font-bold text-[#184741]">Dr. Wilson Navarro Cotto</h3>
+              <p className="text-[#7BC64B] font-semibold mb-2">COO</p>
               <p className="text-gray-700">
-                Experta en salud preventiva y tecnología médica innovadora.
+                Médico con maestría en Gerencia Hospitalaria.
               </p>
             </div>
 
             {/* Team Member 3 */}
             <div className="text-center">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] flex items-center justify-center text-5xl">
-                👨‍💻
-              </div>
-              <h3 className="text-xl font-bold text-[#184741]">Ing. Miguel López</h3>
-              <p className="text-[#7BC64B] font-semibold mb-2">CTO & Fundador</p>
+              <img className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] 
+              flex items-center justify-center text-5xl" src={CIO}/>
+              <h3 className="text-xl font-bold text-[#184741]">María Paula Ruiz Araya</h3>
+              <p className="text-[#7BC64B] font-semibold mb-2">CIO</p>
               <p className="text-gray-700">
-                Desarrollador de soluciones tech healthcare con IA integrada.
+                Experta en salud preventiva y tecnología médica innovadora.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-20 px-4 bg-gradient-to-r from-[#184741] to-[#0f2f2b] text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <p className="text-5xl font-bold text-[#7BC64B] mb-2">50K+</p>
-              <p className="text-xl text-gray-300">Usuarios Activos</p>
-            </div>
-            <div className="text-center">
-              <p className="text-5xl font-bold text-[#7BC64B] mb-2">15M+</p>
-              <p className="text-xl text-gray-300">Datos Analizados</p>
-            </div>
-            <div className="text-center">
-              <p className="text-5xl font-bold text-[#7BC64B] mb-2">25K+</p>
-              <p className="text-xl text-gray-300">Vidas Mejoradas</p>
-            </div>
-            <div className="text-center">
-              <p className="text-5xl font-bold text-[#7BC64B] mb-2">4.8★</p>
-              <p className="text-xl text-gray-300">Calificación Promedio</p>
             </div>
           </div>
         </div>
@@ -174,12 +153,9 @@ function AboutUs() {
             Únete a miles de personas que ya están cuidando su salud cardiovascular con CardiApp.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105">
-              Descargar CardiApp
-            </button>
             <Link
               to="/contact"
-              className="bg-transparent border-2 border-[#6CE1D5] text-[#6CE1D5] px-10 py-4 rounded-lg font-bold text-lg hover:bg-[#6CE1D5] hover:text-[#184741] transition-all duration-300"
+            className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105"
             >
               Contáctanos
             </Link>
