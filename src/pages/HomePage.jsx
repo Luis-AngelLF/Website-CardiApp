@@ -57,7 +57,7 @@ function HomePage() {
           </div>
 
           {/* Right Image Placeholder */}
-          <div className="flex justify-center">
+          <div className="py-20 flex justify-center">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[White] to-[Black] rounded-full blur-3xl opacity-30"></div>
               <div className="relative w-80 h-80 bg-[White]/95 border-4 rounded-full flex items-center justify-center shadow-2xl">
