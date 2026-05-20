@@ -253,9 +253,10 @@ function HomePage() {
             Cuida de tu corazón de manera más ágil con CardiApp. ¡Únete hoy!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105">
+            <Link className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105"
+            to="/about">
               Conoce Más de Nosotros
-            </button>
+            </Link>
             <Link
               to="/contact"
               className="bg-transparent border-2 border-[#6CE1D5] text-[#6CE1D5] px-10 py-4 rounded-lg font-bold text-lg hover:bg-[#6CE1D5] hover:text-[#184741] transition-all duration-300"
