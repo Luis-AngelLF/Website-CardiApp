@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../images/icono-cardiapp-removebg-preview.png';
-
+import doctor from '../images/doctor-white.png'
+import heart from '../images/heart.png'
 function HomePage() {
   return (
     <div className="w-full">
@@ -24,9 +25,12 @@ function HomePage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105">
+              <Link
+                to="/contact"
+                className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105"
+              >
                 Contactenos
-              </button>
+              </Link>
               <Link
                 to="/about"
                 className="bg-transparent border-2 border-[#6CE1D5] text-[#6CE1D5] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#6CE1D5] hover:text-[#184741] transition-all duration-300"
@@ -38,12 +42,12 @@ function HomePage() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[#6CE1D5]/20">
               <div>
-                <p className="text-3xl font-bold text-[#7BC64B]">50K+</p>
-                <p className="text-gray-400">Usuarios Activos</p>
+                <img src={heart} className="h-10"/>
+                <p className="text-gray-400">Seguimiento médico</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-[#7BC64B]">4.8★</p>
-                <p className="text-gray-400">Calificación</p>
+                <img src={doctor} className="h-10"/>
+                <p className="text-gray-400">Apoyo Médico</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-[#7BC64B]">24/7</p>
@@ -53,10 +57,10 @@ function HomePage() {
           </div>
 
           {/* Right Image Placeholder */}
-          <div className="flex justify-center">
+          <div className="py-20 flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] rounded-full blur-3xl opacity-30"></div>
-              <div className="relative w-80 h-80 bg-[#E4F9F5]/95 border-4 border-[#000000]/30 rounded-full flex items-center justify-center shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-[White] to-[Black] rounded-full blur-3xl opacity-30"></div>
+              <div className="relative w-80 h-80 bg-[White]/95 border-4 rounded-full flex items-center justify-center shadow-2xl">
                 <img src={logo} alt="CardiApp Icon" className="w-48 h-48 object-contain" />
               </div>
             </div>
@@ -147,54 +151,91 @@ function HomePage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-[#184741]/5 to-[#6CE1D5]/5">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-[#184741] mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-10 items-start">
+            <div className="space-y-8">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#184741] leading-tight">
                 ¿Por qué elegir CardiApp?
               </h2>
+              <p className="max-w-xl text-lg text-[#4d625c]">
+                Una experiencia clínica digital que combina seguimiento continuo, integraciones modernas y datos claros para pacientes y profesionales.
+              </p>
+
               <ul className="space-y-4">
-                <li className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] flex items-center justify-center text-white font-bold">
+                <li className="flex items-start gap-4">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
-                  <span className="text-lg text-gray-700">
-                    Tecnología de IA para análisis predictivo de salud
-                  </span>
+                  <div>
+                    <p className="text-lg font-semibold text-[#184741]">Tecnología de IA para análisis predictivo de salud</p>
+                  </div>
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] flex items-center justify-center text-white font-bold">
+                <li className="flex items-start gap-4">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
-                  <span className="text-lg text-gray-700">
-                    Integración con dispositivos wearable populares
-                  </span>
+                  <div>
+                    <p className="text-lg font-semibold text-[#184741]">Integración con dispositivos wearable populares</p>
+                  </div>
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] flex items-center justify-center text-white font-bold">
+                <li className="flex items-start gap-4">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
-                  <span className="text-lg text-gray-700">
-                    Reportes detallados y descargables
-                  </span>
+                  <div>
+                    <p className="text-lg font-semibold text-[#184741]">Reportes detallados y descargables</p>
+                  </div>
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] flex items-center justify-center text-white font-bold">
+                <li className="flex items-start gap-4">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
-                  <span className="text-lg text-gray-700">
-                    Disponible en iOS y Android
+                  <div>
+                    <p className="text-lg font-semibold text-[#184741]">Disponible en iOS y Android</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
+                    ✓
                   </span>
+                  <div>
+                    <p className="text-lg font-semibold text-[#184741]">Salud digital B2B con flujo de trabajo colaborativo</p>
+                  </div>
                 </li>
               </ul>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] rounded-2xl blur-2xl opacity-20"></div>
-              <div className="relative bg-white rounded-2xl p-8 shadow-xl">
-                <div className="space-y-6">
-                  <div className="h-32 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] rounded-lg animate-pulse"></div>
-                  <div className="h-24 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] rounded-lg animate-pulse"></div>
+
+            <div className="relative rounded-[2rem] bg-[#184741] p-10 shadow-[0_30px_80px_rgba(24,71,65,0.18)]">
+              <div className="absolute -left-8 top-8 h-24 w-24 rounded-full bg-[#6CE1D5]/10 blur-3xl"></div>
+              <div className="absolute right-8 bottom-8 h-20 w-20 rounded-full bg-[#7BC64B]/10 blur-3xl"></div>
+              <div className="relative z-10 space-y-8">
+                <h3 className="text-3xl font-bold text-white leading-tight">
+                  Un ecosistema de monitoreo y prescripción digital
+                </h3>
+
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">🏋️</span>
+                    <span className="text-white text-base">Ejercicio y educación estructurada</span>
+                  </div>
+                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">⌚</span>
+                    <span className="text-white text-base">Integración con wearables</span>
+                  </div>
+                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">📋</span>
+                    <span className="text-white text-base">Seguimiento clínico automatizado</span>
+                  </div>
+                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">📈</span>
+                    <span className="text-white text-base">KPIs de adherencia en tiempo real</span>
+                  </div>
+                </div>
+
+                <div className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-semibold text-white">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white text-lg">🏅</span>
+                  Validación técnica del MVP completa
                 </div>
               </div>
             </div>
@@ -209,12 +250,13 @@ function HomePage() {
             Comienza tu Viaje Hacia una Mejor Salud
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Miles de personas ya confían en CardiApp para cuidar su corazón. ¡Únete a ellos hoy!
+            Cuida de tu corazón de manera más ágil con CardiApp. ¡Únete hoy!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105">
-              Descargar CardiApp
-            </button>
+            <Link className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#6CE1D5]/50 transition-all duration-300 transform hover:scale-105"
+            to="/about">
+              Conoce Más de Nosotros
+            </Link>
             <Link
               to="/contact"
               className="bg-transparent border-2 border-[#6CE1D5] text-[#6CE1D5] px-10 py-4 rounded-lg font-bold text-lg hover:bg-[#6CE1D5] hover:text-[#184741] transition-all duration-300"

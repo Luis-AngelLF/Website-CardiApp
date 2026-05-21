@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import phone from '../images/phone.png';
+import email from '../images/email.png';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -15,6 +17,7 @@ function ContactUs() {
       [name]: value,
     }));
   };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,15 +49,15 @@ function ContactUs() {
       {/* Contact Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Contact Info Cards */}
             {/* Email */}
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 text-center">
-              <div className="text-5xl mb-4">📧</div>
+              <img src={email} className="h-16 mx-auto" alt="Email" />
               <h3 className="text-xl font-bold text-[#184741] mb-2">Email</h3>
               <p className="text-gray-700 mb-2">Contáctanos por correo electrónico</p>
               <a
-                href="mailto:info@cardiapp.com"
+                /* href="mailto:info@cardiapp.com" */
                 className="text-[#6CE1D5] font-semibold hover:text-[#7BC64B] transition-colors"
               >
                 info@cardiapp.com
@@ -63,25 +66,15 @@ function ContactUs() {
 
             {/* Phone */}
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 text-center">
-              <div className="text-5xl mb-4">📱</div>
+              <img src={phone} className="h-16 mx-auto" alt="Phone" />
               <h3 className="text-xl font-bold text-[#184741] mb-2">Teléfono</h3>
               <p className="text-gray-700 mb-2">Llámanos durante nuestras horas de atención</p>
               <a
-                href="tel:+34912345678"
+                /* href="tel:+34912345678" */
                 className="text-[#6CE1D5] font-semibold hover:text-[#7BC64B] transition-colors"
               >
-                +34 91 234 56 78
+                +506 1234 5678
               </a>
-            </div>
-
-            {/* Location */}
-            <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 text-center">
-              <div className="text-5xl mb-4">📍</div>
-              <h3 className="text-xl font-bold text-[#184741] mb-2">Ubicación</h3>
-              <p className="text-gray-700 mb-2">Visítanos en nuestras oficinas</p>
-              <p className="text-[#6CE1D5] font-semibold">
-                Madrid, España
-              </p>
             </div>
           </div>
 

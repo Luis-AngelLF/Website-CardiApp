@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../images/icono-cardiapp-removebg-preview.png';
+import logo from '../images/IconoCardi.png'
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#184741] to-[#0f2f2b] text-white mt-16">
@@ -7,7 +7,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center mb-4">
               <img src={logo} alt="CardiApp Logo" className="h-8" />
               <span className="font-bold text-xl text-[#6CE1D5]">CardiApp</span>
             </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../images/icono-cardiapp-removebg-preview.png'
+import logo from '../images/IconoCardi.png'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,10 +14,10 @@ function Navbar() {
 
   return (
     <nav className="bg-gradient-to-r from-[#184741] to-[#0f2f2b] shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 font-bold text-2xl">
+          <Link to="/" className="flex items-center font-bold text-2xl">
             <img src={logo} alt="CardiApp Logo" className="h-10" />
             <span className="text-white">CardiApp</span>
           </Link>
@@ -54,9 +54,6 @@ function Navbar() {
             >
               Contacto
             </Link>
-            <button className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-shadow duration-300">
-              Descargar
-            </button>
           </div>
 
           {/* Hamburger Menu Mobile */}
