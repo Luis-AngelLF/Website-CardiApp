@@ -57,10 +57,10 @@ function ContactUs() {
               <h3 className="text-xl font-bold text-[#184741] mb-2">Email</h3>
               <p className="text-gray-700 mb-2">Contáctanos por correo electrónico</p>
               <a
-                /* href="mailto:info@cardiapp.com" */
-                className="text-[#6CE1D5] font-semibold hover:text-[#7BC64B] transition-colors"
+                href="mailto: Cardiappfounder@gmail.com"
+                className="text-[#438C85] font-semibold hover:text-[#7BC64B] transition-colors"
               >
-                info@cardiapp.com
+                Cardiappfounder@gmail.com
               </a>
             </div>
 
@@ -71,7 +71,7 @@ function ContactUs() {
               <p className="text-gray-700 mb-2">Llámanos durante nuestras horas de atención</p>
               <a
                 /* href="tel:+34912345678" */
-                className="text-[#6CE1D5] font-semibold hover:text-[#7BC64B] transition-colors"
+                className="text-[#438C85] font-semibold hover:text-[#7BC64B] transition-colors"
               >
                 +506 1234 5678
               </a>
@@ -210,28 +210,8 @@ function ContactUs() {
         </div>
       </section>
 
-      {/* Support Hours */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#184741] mb-8">
-            Horario de Atención
-          </h2>
-          <div className="bg-gradient-to-r from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30">
-            <p className="text-lg text-gray-700 mb-2">
-              <span className="font-semibold">Lunes a Viernes:</span> 09:00 - 18:00
-            </p>
-            <p className="text-lg text-gray-700 mb-2">
-              <span className="font-semibold">Sábado:</span> 10:00 - 14:00
-            </p>
-            <p className="text-lg text-gray-700 mb-4">
-              <span className="font-semibold">Domingo:</span> Cerrado
-            </p>
-            <p className="text-sm text-gray-600">
-              Responderemos tu mensaje en un máximo de 24 horas durante días laborales.
-            </p>
-          </div>
-        </div>
-      </section>
+    {/* Agregar aquí información de competencias ganadas */}
+
     </div>
   );
 }
