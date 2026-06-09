@@ -40,16 +40,16 @@ function HomePage() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[#6CE1D5]/20">
-              <div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-[#6CE1D5]/20">
+              <div className="flex flex-col items-center">
                 <img src={heart} className="h-10"/>
                 <p className="text-gray-400">Seguimiento médico</p>
               </div>
-              <div>
+              <div className="flex flex-col items-center">
                 <img src={doctor} className="h-10"/>
                 <p className="text-gray-400">Apoyo Médico</p>
               </div>
-              <div>
+              <div className="flex flex-col items-center">
                 <p className="text-3xl font-bold text-[#7BC64B]">24/7</p>
                 <p className="text-gray-400">Monitoreo</p>
               </div>
@@ -163,40 +163,32 @@ function HomePage() {
               </p>
 
               <ul className="space-y-4">
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
+                <li className="flex items-center gap-4">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
                   <div>
-                    <p className="text-lg font-semibold text-[#184741]">Tecnología de IA para análisis predictivo de salud</p>
+                    <p className="text-lg font-semibold text-[#184741] ">Integración con dispositivos wearable populares</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
-                    ✓
-                  </span>
-                  <div>
-                    <p className="text-lg font-semibold text-[#184741]">Integración con dispositivos wearable populares</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
+                <li className="flex items-center gap-4">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
                   <div>
                     <p className="text-lg font-semibold text-[#184741]">Reportes detallados y descargables</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
+                <li className="flex items-center gap-4">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
                   <div>
                     <p className="text-lg font-semibold text-[#184741]">Disponible en iOS y Android</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
+                <li className="flex items-center gap-4">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
                     ✓
                   </span>
                   <div>

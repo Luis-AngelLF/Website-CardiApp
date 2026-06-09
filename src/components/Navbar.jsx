@@ -116,9 +116,6 @@ function Navbar() {
             >
               Contacto
             </Link>
-            <button className="w-full mt-2 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-[#184741] px-4 py-2 rounded-lg font-semibold hover:shadow-lg transition-shadow duration-300">
-              Descargar
-            </button>
           </div>
         )}
       </div>
