@@ -170,41 +170,55 @@ function ContactUs() {
             {/* FAQ 1 */}
             <div className="bg-white p-6 rounded-lg border border-[#6CE1D5]/30 hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                ¿Cuál es el costo de CardiApp?
+                ¿CardiApp reemplaza la atención médica o presencial?
               </h3>
               <p className="text-gray-700">
-                Ofrecemos una versión gratuita con características básicas y planes premium opcionales con más funcionalidades avanzadas. No hay cargos ocultos.
-              </p>
+                No. CardiApp no reemplaza al profesional de salud. Es una herramienta digital que complementa el seguimiento clínico, facilita la prescripción de ejercicio, mejora la comunicación y ayuda a mantener al paciente acompañado fuera de la consulta.              </p>
             </div>
 
             {/* FAQ 2 */}
             <div className="bg-white p-6 rounded-lg border border-[#6CE1D5]/30 hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                ¿Es seguro compartir mis datos médicos?
+                ¿Para quién está diseñada CardiApp?
               </h3>
               <p className="text-gray-700">
-                Sí, utilizamos encriptación de nivel médico y cumplimos con todas las regulaciones de privacidad internacionales como HIPAA y GDPR.
-              </p>
+                Está diseñada para pacientes con enfermedades cardiovasculares o factores de riesgo, como hipertensión, diabetes, infarto previo, stent, bypass o sedentarismo, así como para profesionales, clínicas y hospitales que ofrecen programas de rehabilitación cardiovascular.              </p>
             </div>
 
             {/* FAQ 3 */}
             <div className="bg-white p-6 rounded-lg border border-[#6CE1D5]/30 hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                ¿Con qué dispositivos es compatible?
+                ¿Qué puede hacer el profesional dentro de CardiApp?
               </h3>
               <p className="text-gray-700">
-                CardiApp es compatible con dispositivos wearables populares como Apple Watch, Fitbit, Garmin y muchos más. Funciona en iOS y Android.
-              </p>
+                El profesional puede asignar ejercicios, enviar material educativo, revisar registros del paciente, dar seguimiento al progreso, observar indicadores de adherencia y tomar decisiones basadas en datos más claros.              </p>
             </div>
 
             {/* FAQ 4 */}
             <div className="bg-white p-6 rounded-lg border border-[#6CE1D5]/30 hover:shadow-md transition-shadow">
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                ¿Necesito una prescripción médica?
+                ¿CardiApp se conecta con wearables?
               </h3>
               <p className="text-gray-700">
-                No es necesario, pero recomendamos consultar con tu médico antes de usar CardiApp si tienes condiciones cardíacas preexistentes.
-              </p>
+                El objetivo de CardiApp es integrarse con dispositivos wearables populares para facilitar el seguimiento de variables como frecuencia cardíaca, pasos y otros datos relevantes para el programa de rehabilitación.              </p>
+            </div>
+
+            {/* FAQ 5 */}
+            <div className="bg-white p-6 rounded-lg border border-[#6CE1D5]/30 hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold text-[#184741] mb-3">
+                ¿Los datos del paciente estarán protegidos?
+              </h3>
+              <p className="text-gray-700">
+                Sí. CardiApp se desarrolla con un enfoque de seguridad, privacidad y manejo responsable de datos clínicos, buscando alinearse con buenas prácticas y estándares aplicables en salud digital.                </p>
+            </div>
+
+            {/* FAQ 6 */}
+            <div className="bg-white p-6 rounded-lg border border-[#6CE1D5]/30 hover:shadow-md transition-shadow">
+              <h3 className="text-xl font-bold text-[#184741] mb-3">
+                ¿CardiApp está pensada solo para pacientes o también para clínicas?
+              </h3>
+              <p className="text-gray-700">
+                CardiApp está pensada como una solución B2B para clínicas, hospitales y profesionales de salud, pero con una experiencia sencilla para que el paciente pueda usarla desde casa. </p>
             </div>
           </div>
         </div>

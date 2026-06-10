@@ -76,7 +76,7 @@ function HomePage() {
               Características Principales
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Descubre todo lo que CardiApp puede hacer por tu salud cardiovascular
+              Una plataforma digital para acompañar, monitorear y mejorar la adherencia de los pacientes en programas de rehabilitación cardiovascular.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ function HomePage() {
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 hover:shadow-lg transition-shadow duration-300">
               <div className="text-4xl mb-4">📊</div>
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                Monitoreo en Tiempo Real
+                Monitoreo Clínico Remoto
               </h3>
               <p className="text-gray-700">
                 Seguimiento continuo de tu ritmo cardíaco, presión arterial y niveles de oxígeno con datos precisos y actualizados.
@@ -96,7 +96,7 @@ function HomePage() {
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 hover:shadow-lg transition-shadow duration-300">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                Metas Personalizadas
+                Planes personalizados de rehabilitación
               </h3>
               <p className="text-gray-700">
                 Establece objetivos de salud adaptados a tu perfil y recibe recomendaciones personalizadas para alcanzarlos.
@@ -107,7 +107,7 @@ function HomePage() {
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 hover:shadow-lg transition-shadow duration-300">
               <div className="text-4xl mb-4">💬</div>
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                Asesoría Médica
+                Acompañamiento Profesional
               </h3>
               <p className="text-gray-700">
                 Acceso a profesionales de la salud que responden tus preguntas y ofrecen orientación experta cuando la necesites.
@@ -118,7 +118,7 @@ function HomePage() {
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 hover:shadow-lg transition-shadow duration-300">
               <div className="text-4xl mb-4">👥</div>
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                Comunidad Activa
+                Educación para el Autocuidado
               </h3>
               <p className="text-gray-700">
                 Conecta con otros usuarios, comparte tu progreso y recibe apoyo de una comunidad dedicada al bienestar.
@@ -129,21 +129,20 @@ function HomePage() {
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 hover:shadow-lg transition-shadow duration-300">
               <div className="text-4xl mb-4">🔔</div>
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                Alertas Inteligentes
+                Recordatorios Inteligentes
               </h3>
               <p className="text-gray-700">
-                Recibe notificaciones automáticas si detectamos anomalías en tus datos de salud para actuar rápidamente.
-              </p>
+                Notificaciones para ejercicio, toma de presión arterial, registro de síntomas, medicamentos y tareas del programa de rehabilitación.              </p>
             </div>
 
             {/* Feature 6 */}
             <div className="bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 p-8 rounded-lg border border-[#6CE1D5]/30 hover:shadow-lg transition-shadow duration-300">
               <div className="text-4xl mb-4">🔒</div>
               <h3 className="text-xl font-bold text-[#184741] mb-3">
-                Seguridad Garantizada
+                Seguridad y Datos Clínicos Protegidos
               </h3>
               <p className="text-gray-700">
-                Tus datos están protegidos con encriptación de nivel militar y cumplimos con todas las normas de privacidad.
+                Diseñada con enfoque en privacidad, trazabilidad y manejo responsable de la información clínica del paciente.
               </p>
             </div>
           </div>
@@ -159,43 +158,58 @@ function HomePage() {
                 ¿Por qué elegir CardiApp?
               </h2>
               <p className="max-w-xl text-lg text-[#4d625c]">
-                Una experiencia clínica digital que combina seguimiento continuo, integraciones modernas y datos claros para pacientes y profesionales.
+                Porque permite extender la rehabilitación cardiovascular más allá de la clínica, conectando al paciente, al profesional y a la institución en un solo ecosistema digital.
               </p>
 
-              <ul className="space-y-4">
-                <li className="flex items-center gap-4">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
-                    ✓
-                  </span>
-                  <div>
-                    <p className="text-lg font-semibold text-[#184741] ">Integración con dispositivos wearable populares</p>
+              <div className="space-y-4">
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 border border-[#6CE1D5]/20 hover:shadow-md transition-shadow duration-300">
+                  <div className="flex items-start gap-4">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg flex-shrink-0 mt-1">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="text-base font-bold text-[#184741] mb-2">Diseñada específicamente para rehabilitación cardiovascular</p>
+                      <p className="text-sm text-[#4d625c] leading-relaxed">No es una app genérica de fitness. Está pensada para programas clínicos de seguimiento, educación y ejercicio terapéutico.</p>
+                    </div>
                   </div>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
-                    ✓
-                  </span>
-                  <div>
-                    <p className="text-lg font-semibold text-[#184741]">Reportes detallados y descargables</p>
+                </div>
+
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 border border-[#6CE1D5]/20 hover:shadow-md transition-shadow duration-300">
+                  <div className="flex items-start gap-4">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg flex-shrink-0 mt-1">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="text-base font-bold text-[#184741] mb-2">Mejora la adherencia del paciente</p>
+                      <p className="text-sm text-[#4d625c] leading-relaxed">Ayuda a reducir el abandono mediante recordatorios, seguimiento remoto, educación y acompañamiento continuo.</p>
+                    </div>
                   </div>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
-                    ✓
-                  </span>
-                  <div>
-                    <p className="text-lg font-semibold text-[#184741]">Disponible en iOS y Android</p>
+                </div>
+
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 border border-[#6CE1D5]/20 hover:shadow-md transition-shadow duration-300">
+                  <div className="flex items-start gap-4">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg flex-shrink-0 mt-1">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="text-base font-bold text-[#184741] mb-2">Facilita el trabajo del profesional de salud</p>
+                      <p className="text-sm text-[#4d625c] leading-relaxed">Permite prescribir ejercicio, enviar contenido educativo, revisar avances y organizar el seguimiento del paciente desde una sola plataforma.</p>
+                    </div>
                   </div>
-                </li>
-                <li className="flex items-center gap-4">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg">
-                    ✓
-                  </span>
-                  <div>
-                    <p className="text-lg font-semibold text-[#184741]">Salud digital B2B con flujo de trabajo colaborativo</p>
+                </div>
+
+                <div className="p-5 rounded-xl bg-gradient-to-br from-[#6CE1D5]/10 to-[#7BC64B]/10 border border-[#6CE1D5]/20 hover:shadow-md transition-shadow duration-300">
+                  <div className="flex items-start gap-4">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] text-white font-bold text-lg flex-shrink-0 mt-1">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="text-base font-bold text-[#184741] mb-2">Genera datos útiles para clínicas y hospitales</p>
+                      <p className="text-sm text-[#4d625c] leading-relaxed">Ofrece indicadores de progreso, adherencia, participación y seguimiento que pueden apoyar mejores decisiones clínicas y operativas.</p>
+                    </div>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
 
             <div className="relative rounded-[2rem] bg-[#184741] p-10 shadow-[0_30px_80px_rgba(24,71,65,0.18)]">
@@ -203,33 +217,148 @@ function HomePage() {
               <div className="absolute right-8 bottom-8 h-20 w-20 rounded-full bg-[#7BC64B]/10 blur-3xl"></div>
               <div className="relative z-10 space-y-8">
                 <h3 className="text-3xl font-bold text-white leading-tight">
-                  Un ecosistema de monitoreo y prescripción digital
+                  Funcionalidades Clave
                 </h3>
 
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">🏋️</span>
-                    <span className="text-white text-base">Ejercicio y educación estructurada</span>
+                <div className="grid grid-cols-1 gap-4">
+                  <div className="group p-5 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] transition-all duration-300 cursor-default">
+                    <p className="text-lg font-bold text-white mb-2 group-hover:text-[#6CE1D5] transition-colors">💊 Prescripción de ejercicio terapéutico</p>
+                    <p className="text-sm text-white/80 leading-relaxed">Programas personalizados según diagnóstico, capacidad funcional y evolución del paciente.</p>
                   </div>
-                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">⌚</span>
-                    <span className="text-white text-base">Integración con wearables</span>
-                  </div>
-                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">📋</span>
-                    <span className="text-white text-base">Seguimiento clínico automatizado</span>
-                  </div>
-                  <div className="flex items-center gap-4 rounded-3xl border border-white/15 bg-white/5 p-4">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 text-white text-xl">📈</span>
-                    <span className="text-white text-base">KPIs de adherencia en tiempo real</span>
-                  </div>
-                </div>
 
-                <div className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-semibold text-white">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white text-lg">🏅</span>
-                  Validación técnica del MVP completa
+                  <div className="group p-5 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] transition-all duration-300 cursor-default">
+                    <p className="text-lg font-bold text-white mb-2 group-hover:text-[#7BC64B] transition-colors">📚 Educación estructurada para el paciente</p>
+                    <p className="text-sm text-white/80 leading-relaxed">Contenido sobre enfermedad cardiovascular, autocuidado, medicamentos, actividad física y hábitos saludables.</p>
+                  </div>
+
+                  <div className="group p-5 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] transition-all duration-300 cursor-default">
+                    <p className="text-lg font-bold text-white mb-2 group-hover:text-[#6CE1D5] transition-colors">⌚ Integración con wearables</p>
+                    <p className="text-sm text-white/80 leading-relaxed">Seguimiento de datos relevantes como frecuencia cardíaca, pasos y actividad física.</p>
+                  </div>
+
+                  <div className="group p-5 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] transition-all duration-300 cursor-default">
+                    <p className="text-lg font-bold text-white mb-2 group-hover:text-[#7BC64B] transition-colors">📋 Seguimiento clínico organizado</p>
+                    <p className="text-sm text-white/80 leading-relaxed">Registro de síntomas, signos vitales, cumplimiento de tareas y evolución del paciente.</p>
+                  </div>
+
+                  <div className="group p-5 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] transition-all duration-300 cursor-default">
+                    <p className="text-lg font-bold text-white mb-2 group-hover:text-[#6CE1D5] transition-colors">📊 KPIs de adherencia y progreso</p>
+                    <p className="text-sm text-white/80 leading-relaxed">Datos claros para profesionales, clínicas y hospitales sobre participación, continuidad y resultados del programa.</p>
+                  </div>
+
+                  <div className="group p-5 rounded-2xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.08] transition-all duration-300 cursor-default">
+                    <p className="text-lg font-bold text-white mb-2 group-hover:text-[#7BC64B] transition-colors">🏅 MVP validado técnicamente</p>
+                    <p className="text-sm text-white/80 leading-relaxed">CardiApp cuenta con avances en validación técnica y desarrollo de su modelo como solución de salud digital.</p>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recognitions Section */}
+      <section className="relative py-28 px-4 bg-[#0a1f1d] overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#6CE1D5]/5 blur-3xl"></div>
+          <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-[#7BC64B]/5 blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#184741]/40 blur-3xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="mb-20">
+            <p className="text-[#6CE1D5] text-sm font-semibold uppercase tracking-[0.25em] mb-4">Trayectoria validada</p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight max-w-2xl">
+              Reconocimientos,{' '}
+              <span className="bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] bg-clip-text text-transparent">
+                programas y aliados
+              </span>
+            </h2>
+          </div>
+
+          {/* Featured top row - 2 large cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+
+            {/* Card 1 - Falling Walls (featured - has place) */}
+            <div className="group relative rounded-3xl bg-gradient-to-br from-[#184741] to-[#0f2f2b] border border-[#6CE1D5]/20 p-10 overflow-hidden hover:border-[#6CE1D5]/50 transition-all duration-500 hover:shadow-[0_0_60px_rgba(108,225,213,0.12)]">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#6CE1D5]/5 rounded-full blur-2xl group-hover:bg-[#6CE1D5]/10 transition-all duration-500"></div>
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-8">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#6CE1D5] border border-[#6CE1D5]/40 px-4 py-1.5 rounded-full">
+                    Reconocimiento
+                  </span>
+                  <span className="text-7xl font-black text-[#6CE1D5]/10 leading-none select-none group-hover:text-[#6CE1D5]/20 transition-all duration-500">2°</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
+                  Falling Walls Costa Rica 2025
+                </h3>
+                <p className="text-white/60 text-base leading-relaxed">
+                  CardiApp obtuvo el 2.º lugar con una propuesta enfocada en derribar barreras de acceso a la rehabilitación cardiovascular.
+                </p>
+                <div className="mt-8 h-px bg-gradient-to-r from-[#6CE1D5]/40 to-transparent"></div>
+              </div>
+            </div>
+
+            {/* Card 2 - INCAE (featured - finalist) */}
+            <div className="group relative rounded-3xl bg-gradient-to-br from-[#1a3a2a] to-[#0f2f2b] border border-[#7BC64B]/20 p-10 overflow-hidden hover:border-[#7BC64B]/50 transition-all duration-500 hover:shadow-[0_0_60px_rgba(123,198,75,0.12)]">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#7BC64B]/5 rounded-full blur-2xl group-hover:bg-[#7BC64B]/10 transition-all duration-500"></div>
+              <div className="relative z-10">
+                <div className="flex items-start justify-between mb-8">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#7BC64B] border border-[#7BC64B]/40 px-4 py-1.5 rounded-full">
+                    Emprendimiento
+                  </span>
+                  <span className="text-7xl font-black text-[#7BC64B]/10 leading-none select-none group-hover:text-[#7BC64B]/20 transition-all duration-500">★</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
+                  INCAE Entrepreneurship Award 2025
+                </h3>
+                <p className="text-white/60 text-base leading-relaxed">
+                  Proyecto finalista que fortaleció la visión de negocio, la estrategia de crecimiento y la proyección regional de CardiApp.
+                </p>
+                <div className="mt-8 h-px bg-gradient-to-r from-[#7BC64B]/40 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom row - 3 smaller cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            {/* Card 3 - AUGE-UCR */}
+            <div className="group relative rounded-2xl bg-white/[0.03] border border-white/10 p-8 overflow-hidden hover:bg-white/[0.07] hover:border-[#6CE1D5]/30 transition-all duration-400">
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl"></div>
+              <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#6CE1D5]/80 mb-6">
+                — Aceleración
+              </span>
+              <h3 className="text-xl font-bold text-white mb-3 leading-snug">AUGE-UCR</h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                Aceleradora universitaria que ha brindado acompañamiento, mentoría y apoyo para el desarrollo temprano de CardiApp.
+              </p>
+            </div>
+
+            {/* Card 4 - Technovation */}
+            <div className="group relative rounded-2xl bg-white/[0.03] border border-white/10 p-8 overflow-hidden hover:bg-white/[0.07] hover:border-[#6CE1D5]/30 transition-all duration-400">
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl"></div>
+              <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#6CE1D5]/80 mb-6">
+                — Innovación
+              </span>
+              <h3 className="text-xl font-bold text-white mb-3 leading-snug">Technovation</h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                Programa de innovación y apoyo al emprendimiento que ha fortalecido la propuesta con acompañamiento y respaldo estratégico.
+              </p>
+            </div>
+
+            {/* Card 5 - Life Center Innovation */}
+            <div className="group relative rounded-2xl bg-white/[0.03] border border-white/10 p-8 overflow-hidden hover:bg-white/[0.07] hover:border-[#7BC64B]/30 transition-all duration-400">
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#6CE1D5] to-[#7BC64B] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl"></div>
+              <span className="inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#7BC64B]/80 mb-6">
+                — Validación clínica
+              </span>
+              <h3 className="text-xl font-bold text-white mb-3 leading-snug">Life Center Innovation</h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                Espacio de incubación y validación clínica que ha impulsado el desarrollo del MVP en un entorno real de salud.
+              </p>
             </div>
           </div>
         </div>
